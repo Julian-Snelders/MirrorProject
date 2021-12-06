@@ -23,26 +23,26 @@ public class PlayerMovementController : NetworkBehaviour
         }
     }
 
-    public override void OnStartAuthority()
+    public override void OnStartAuthority() // called on object (Player) that has authority over this gameObject
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;      // locks cursor
 
         enabled = true;
 
-        Controls.Player.Move.performed += ctx => SetMovement(ctx.ReadValue<Vector2>());
+        Controls.Player.Move.performed += ctx => SetMovement(ctx.ReadValue<Vector2>()); // search controls.player.move and read the vector2 value
         Controls.Player.Move.canceled += ctx => ResetMovement();
 
      
-        playerCamera.gameObject.SetActive(true);
+        playerCamera.gameObject.SetActive(true);        // your playercamera will be actie for you
         
     }
 
+    [ClientCallback]               // only listen to clients. (Server doesnt have input. client does)
+    private void OnEnable() => Controls.Enable();                    //set active input system
     [ClientCallback]
-    private void OnEnable() => Controls.Enable();
-    [ClientCallback]
-    private void OnDisable() => Controls.Disable();
-    [ClientCallback]
-    private void Update() => Move();
+    private void OnDisable() => Controls.Disable();                  // deactivate input system
+    [ClientCallback] 
+    private void Update() => Move();     // next method Move
 
     [Client]
     private void SetMovement(Vector2 movement) => previousInput = movement;
@@ -52,7 +52,7 @@ public class PlayerMovementController : NetworkBehaviour
 
     [Client]
 
-    private void Move()
+    public void Move()
     {
         Vector3 right = controller.transform.right;
         Vector3 forward = controller.transform.forward;

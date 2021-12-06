@@ -22,7 +22,7 @@ public class NetworkGamePlayerLobby : NetworkBehaviour
 
     public override void OnStartClient()
     {
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject); // dont destroy this gameobject on new scene load
 
         Room.GamePlayers.Add(this);
     }
@@ -35,7 +35,7 @@ public class NetworkGamePlayerLobby : NetworkBehaviour
     [Server]
     public void SetDisplayName(string displayName)
     {
-        this.displayName = displayName;
+        this.displayName = displayName;    // set displayname
     }
 
 
