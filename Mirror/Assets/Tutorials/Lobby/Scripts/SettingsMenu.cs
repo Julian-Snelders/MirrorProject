@@ -16,7 +16,7 @@ public class SettingsMenu : MonoBehaviour
    
     public void Update()
     {
-        if (GameIsPaused == false && Input.GetKey(KeyCode.Escape))
+        if (GameIsPaused == false && Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
         }
@@ -24,9 +24,8 @@ public class SettingsMenu : MonoBehaviour
 
     public void Pause()
     {
-        
         GameIsPaused = true;
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.None;   
         pauseMenuUI.SetActive(true);
         cursor.SetActive(false);
     }
