@@ -762,7 +762,7 @@ MonoBehaviour:
   onlineScene: Assets/Tutorials/Lobby/Scene_Lobby.unity
   transport: {fileID: 1495594494}
   networkAddress: localhost
-  maxConnections: 4
+  maxConnections: 8
   authenticator: {fileID: 0}
   playerPrefab: {fileID: 5985174639948530860, guid: 8dee642fc79732d4dbc342d5ea20fa92, type: 3}
   autoCreatePlayer: 1

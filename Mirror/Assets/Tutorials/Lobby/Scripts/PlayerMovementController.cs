@@ -13,7 +13,6 @@ public class PlayerMovementController : NetworkBehaviour
     float rotationX = 0;
 
 
-
     private Vector2 previousInput;
 
     private Controls controls;
@@ -34,7 +33,7 @@ public class PlayerMovementController : NetworkBehaviour
         enabled = true;
 
         transform.GetComponent<jump>().enabled = true;  // enable jump script
-        transform.GetComponent<placeItems>().enabled = true; // enable item place script
+       // transform.GetComponent<placeItems>().enabled = true; // enable item place script
 
         Controls.Player.Move.performed += ctx => SetMovement(ctx.ReadValue<Vector2>()); // search controls.player.move and read the vector2 value
         Controls.Player.Move.canceled += ctx => ResetMovement();
@@ -49,7 +48,15 @@ public class PlayerMovementController : NetworkBehaviour
     [ClientCallback]
     private void OnDisable() => Controls.Disable();                  // deactivate input system
     [ClientCallback]
-    private void Update() => Move();// next method Move
+    private void Update()
+    {
+        if (hasAuthority)
+        {
+                Move(); // next method Move
+                Look();
+         
+        }
+    }
 
     [Client]
     private void SetMovement(Vector2 movement) => previousInput = movement;
@@ -77,12 +84,17 @@ public class PlayerMovementController : NetworkBehaviour
         Vector3 movement = right.normalized * previousInput.x + forward.normalized * previousInput.y;
 
         controller.Move(movement * speed * Time.deltaTime);
+    }
 
-        //camera
-        rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
-        rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
-        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+    [Client]
+    public void Look()
+    {
+            //camera 
+            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
+            rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
+            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+      
     }
    
 

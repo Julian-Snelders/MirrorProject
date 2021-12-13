@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 6008358186145123420}
   - component: {fileID: 8203910935377666}
   - component: {fileID: 8122588925043211405}
-  - component: {fileID: 8636082979242202471}
+  - component: {fileID: 6491276996667754026}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -519,20 +519,24 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
---- !u!114 &8636082979242202471
+--- !u!114 &6491276996667754026
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576166998156186210}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff9e6e5656d62e14fa6c160eb3324105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   ItemListUI: {fileID: 1768313103016291341}
-  ItemListOn: 0
+  ghost_Cube: {fileID: 7726965750249871940, guid: 3dd7345c03921974c834d3d2a2262c40, type: 3}
+  placed_Cube: {fileID: 1771064471285766632, guid: b0c06c616f213d741b41db0fbb565992, type: 3}
+  cam: {fileID: 2028831867898770801}
 --- !u!1 &1684743444022233512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 205, y: -186.77303}
+  m_AnchoredPosition: {x: 205, y: -222.41136}
   m_SizeDelta: {x: 410, y: 63.5461}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2150911810495816373
@@ -1414,7 +1418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7462607614224352593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1517,13 +1521,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 6491276996667754026}
+        m_TargetAssemblyTypeName: placeItems, Assembly-CSharp
+        m_MethodName: PressCube
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1832,7 +1836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 205, y: -31.77305}
+  m_AnchoredPosition: {x: 205, y: -95.31915}
   m_SizeDelta: {x: 410, y: 63.5461}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2660199688129017503
@@ -2182,7 +2186,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 205, y: -264.273}
+  m_AnchoredPosition: {x: 205, y: -285.95746}
   m_SizeDelta: {x: 410, y: 63.5461}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &535336230197048858
@@ -2852,7 +2856,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 205, y: -109.27303}
+  m_AnchoredPosition: {x: 205, y: -158.86525}
   m_SizeDelta: {x: 410, y: 63.5461}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7689907473936187380
