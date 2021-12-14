@@ -5,46 +5,81 @@ using Mirror;
 
 public class placeItems : NetworkBehaviour
 {
+    public List<GameObject> GhostShapes;                                // list of ghost objects
+    public List<GameObject> placeableShapes;                            // list of placed objects
+
+    int GhostIndex;                                                     // index number for specific ghost shape
+    int PlacedIndex;                                                    // index number for specific placed shape
+
     [SerializeField] private GameObject ItemListUI;                     // UI Object for item list
     private bool ItemListOn = false;                                    // bool that keeps state of item list
+    bool during = false;                                                // bool that keeps u from opening itemlist when ghost object is active
 
-    public GameObject ghost_Cube;                                       // prefab that follows raycast hit for placement
-    public GameObject placed_Cube;                                      // prefab that will be spawned onclick on Ghost_Cube position
     public Camera cam;                                                  // camera variable for raycast origin reference
-    GameObject ghost;
+    GameObject ghost;                                                   // reference object for spawning and following raycast hit
 
-    bool pressedcube = false;                                           // cube button has been pressed
-    RaycastHit hit;                                 
+    bool pressedShape = false;                                          // if the UI button has been pressed
+    RaycastHit hit;                                                     
 
-    
+    public void Start()
+    {
+        GhostShapes = new List<GameObject>(Resources.LoadAll<GameObject>("GhostShapes"));           // found in resources file 'ghostshapes'
+        placeableShapes = new List<GameObject>(Resources.LoadAll<GameObject>("SpawnableShapes"));   // found in resources file 'spawnableshapes'
+    }
     public void PressCube()                                             // method called on cube button click
     {
-       
-        pressedcube = true;                                             // pressed cube button
-       
-        Instantiate(ghost_Cube, hit.point, Quaternion.identity);        // instantiate ghost cube at hit position
-        ghost = GameObject.FindWithTag("ghost");                        // private object that makes reference to ghost cube object
-        ItemMenuOff();
+        GhostIndex = 1;
+        PressedShape();
+    }
+    public void pressCircle()                                           // method called on sphere button click
+    {   
+        GhostIndex = 0;
+        PressedShape();
     }
     
+    public void PressedShape()                                          // pressed a button method
+    {
+        pressedShape = true; 
+        
+        ItemListOn = false;                                             
+        ItemListUI.SetActive(false);                                    // UI object false
+
+        during = true;
+
+        Instantiate(GhostShapes[GhostIndex], hit.point, Quaternion.identity); // instantiate ghost object of correct index.
+
+        ghost = GameObject.FindWithTag("ghost");                        // private object that makes reference to current ghost object
+              
+     
+        ItemMenuOff();
+    }
     public void Update()
     {
+       PlacedIndex = GhostIndex;                                        // there the same all the time
+
         ItemMenuOn();
 
         if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity)) // forward line is drawen in infinite direction
         {       
-            if (pressedcube == true)                                    // Cube bottun was pressed
-            {
-                ghost.transform.position = hit.point;                   // ghost_cube follows hit.point
-
-                if (Input.GetMouseButtonDown(0))                        // left mouse spawns placed_cube 
+            if (pressedShape == true)                                    // if bottun was pressed
+            {       
+                ghost.transform.position = hit.point;                    // ghost_cube follows hit.point
+                
+                if (Input.GetMouseButtonDown(0))                         // left mouse spawns placed_object
                 {
                     CmdSpawn();
                 }       
-                if (Input.GetMouseButtonDown(1))                        // right mouse destroys ghost_cube prefab
+                if (Input.GetMouseButtonDown(1))                        // right mouse destroys ghost_object prefab
                 {
                     Destroy(ghost);
-                    pressedcube = false;
+                    pressedShape = false;
+
+                    ItemListUI.SetActive(true);
+                    ItemListOn = true;
+                    during = false;
+
+                    gameObject.GetComponent<PlayerMovementController>().enabled = false; // disable movement
+                    Cursor.lockState = CursorLockMode.None;                              // cursor onscreen
                 }
                 return;
             }
@@ -53,15 +88,15 @@ public class placeItems : NetworkBehaviour
     }
     void CmdSpawn()
     {
-       GameObject PlaceDaCube = Instantiate(placed_Cube, ghost.transform.position, ghost.transform.rotation);  // instantiate placed object on ghost cube position
-       NetworkServer.Spawn(PlaceDaCube);                                               // spawn for networkmanager
+       GameObject PlaceDaShape = Instantiate(placeableShapes[PlacedIndex], ghost.transform.position, ghost.transform.rotation);  // instantiate placed object on ghost object position
+       NetworkServer.Spawn(PlaceDaShape);                                               // spawn from networkmanager (clients can see)
     }
     
     void ItemMenuOn()                                                                   // active like update
     {
         if (hasAuthority)                                                               // if player has authority
         {
-            if (Input.GetKeyDown(KeyCode.Q) && ItemListOn == false) // turn on UI.      //press Q to turn on ItemList UI Object
+            if (Input.GetKeyDown(KeyCode.Q) && ItemListOn == false && during == false)  //press Q to turn on ItemList UI Object
             {
                 gameObject.GetComponent<PlayerMovementController>().enabled = false;    // turn off movement
 

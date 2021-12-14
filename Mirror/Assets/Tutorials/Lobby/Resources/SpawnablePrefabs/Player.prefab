@@ -533,9 +533,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  GhostShapes: []
+  placeableShapes: []
   ItemListUI: {fileID: 1768313103016291341}
-  ghost_Cube: {fileID: 7726965750249871940, guid: 3dd7345c03921974c834d3d2a2262c40, type: 3}
-  placed_Cube: {fileID: 1771064471285766632, guid: b0c06c616f213d741b41db0fbb565992, type: 3}
   cam: {fileID: 2028831867898770801}
 --- !u!1 &1684743444022233512
 GameObject:
@@ -1920,7 +1920,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5680626520501011191}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6491276996667754026}
+        m_TargetAssemblyTypeName: placeItems, Assembly-CSharp
+        m_MethodName: pressCircle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5235049590436380014
 GameObject:
   m_ObjectHideFlags: 0
