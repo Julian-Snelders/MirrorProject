@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class SettingsMenu : MonoBehaviour
 {
@@ -13,13 +14,13 @@ public class SettingsMenu : MonoBehaviour
     public GameObject pauseMenuUI, resumeButton, optionsButton, QuitButton, SensitivitySliderUI, 
                       backButton, cursor;
 
-   
     public void Update()
     {
         if (GameIsPaused == false && Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
         }
+      
     }
 
     public void Pause()

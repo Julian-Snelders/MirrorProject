@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
+using UnityEngine.EventSystems;
 
 public class placeItems : NetworkBehaviour
 {
-    public List<GameObject> GhostShapes;                                // list of ghost objects
-    public List<GameObject> placeableShapes;                            // list of placed objects
-
-    int GhostIndex;                                                     // index number for specific ghost shape
-    int PlacedIndex;                                                    // index number for specific placed shape
+    [SyncVar] public List<GameObject> GhostShapes;                                // list of ghost objects
+    [SyncVar] public List<GameObject> placeableShapes;                            // list of placed objects
+    [SyncVar] int GhostIndex;                                                     // index number for specific ghost shape
+    [SyncVar] int PlacedIndex;                                                    // index number for specific placed shape
 
     [SerializeField] private GameObject ItemListUI;                     // UI Object for item list
     private bool ItemListOn = false;                                    // bool that keeps state of item list
@@ -19,17 +19,17 @@ public class placeItems : NetworkBehaviour
     GameObject ghost;                                                   // reference object for spawning and following raycast hit
 
     bool pressedShape = false;                                          // if the UI button has been pressed
-    RaycastHit hit;                                                     
+    RaycastHit hit;
 
     public void Start()
     {
         GhostShapes = new List<GameObject>(Resources.LoadAll<GameObject>("GhostShapes"));           // found in resources file 'ghostshapes'
         placeableShapes = new List<GameObject>(Resources.LoadAll<GameObject>("SpawnableShapes"));   // found in resources file 'spawnableshapes'
+
     }
     public override void OnStartAuthority()
     {
         enabled = true;
-        
     }
 
     public void PressCircle()                                           // method called on sphere button click
@@ -52,12 +52,12 @@ public class placeItems : NetworkBehaviour
         GhostIndex = 3;
         PressedShape();
     }
-    
+
     void PressedShape()                                          // pressed a button method
     {
-        pressedShape = true; 
-        
-        ItemListOn = false;                                             
+        pressedShape = true;
+
+        ItemListOn = false;
         ItemListUI.SetActive(false);                                    // UI object false
 
         during = true;
@@ -65,56 +65,57 @@ public class placeItems : NetworkBehaviour
         Instantiate(GhostShapes[GhostIndex], hit.point, Quaternion.identity); // instantiate ghost object of correct index.
 
         ghost = GameObject.FindWithTag("ghost");                        // private object that makes reference to current ghost object
-              
-     
+
+
         ItemMenuOff();
     }
 
     [Client]
     void Update()
     {
-        if(!isLocalPlayer) { return; }
-        PlacedIndex = GhostIndex;                                        // there the same all the time
+        if (isLocalPlayer)
+            PlacedIndex = GhostIndex;                                        // there the same all the time
 
         ItemMenuOn();
-      
-            if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity)) // forward line is drawen in infinite direction
+
+        if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity)) // forward line is drawen in infinite direction
+        {
+            if (pressedShape == true)                                    // if bottun was pressed
             {
-                if (pressedShape == true)                                    // if bottun was pressed
+                ghost.transform.position = hit.point;                    // ghost_cube follows hit.point
+
+                if (Input.GetMouseButtonDown(0))                         // left mouse spawns placed_object
                 {
-                    ghost.transform.position = hit.point;                    // ghost_cube follows hit.point
+                    CmdSpawn();
+                    Debug.Log("klik");
+                }                      // Spawn 
+                if (Input.GetMouseButtonDown(1))                        // right mouse destroys ghost_object prefab
+                {
+                    Destroy(ghost);
+                    pressedShape = false;
 
-                    if (Input.GetMouseButtonDown(0))                         // left mouse spawns placed_object
-                    {
-                    
-                        CmdSpawn();
-                    }
-                    if (Input.GetMouseButtonDown(1))                        // right mouse destroys ghost_object prefab
-                    {
-                        Destroy(ghost);
-                        pressedShape = false;
+                    ItemListUI.SetActive(true);
+                    ItemListOn = true;
+                    during = false;
 
-                        ItemListUI.SetActive(true);
-                        ItemListOn = true;
-                        during = false;
-
-                        gameObject.GetComponent<PlayerMovementController>().enabled = false; // disable movement
-                        Cursor.lockState = CursorLockMode.None;                              // cursor onscreen
-                    }
-                    return;
-                }
+                    gameObject.GetComponent<PlayerMovementController>().enabled = false; // disable movement
+                    Cursor.lockState = CursorLockMode.None;                              // cursor onscreen
+                }                      // Destroy ghost object
+                return;
             }
-        
+        }
+
+    }
+    // [SyncVar] GameObject PlaceDaShape;
+    [Command]
+    void CmdSpawn()
+    {
+         GameObject PlaceDaShape = (GameObject)Instantiate(placeableShapes[PlacedIndex], ghost.transform.position, ghost.transform.rotation);  // instantiate placed object on ghost object position
+         NetworkServer.Spawn(PlaceDaShape);                                                                                                    // spawn from networkmanager (clients can see)
+          Debug.Log("instantiated ");
     }
 
-    [Command]
-    private void CmdSpawn()
-    {
-         GameObject PlaceDaShape = Instantiate(placeableShapes[PlacedIndex], ghost.transform.position, ghost.transform.rotation);  // instantiate placed object on ghost object position
-         NetworkServer.Spawn(PlaceDaShape); // spawn from networkmanager (clients can see)
-        
-    }
-    
+
     void ItemMenuOn()                                                                   // active like update
     {
         if (isLocalPlayer)                                                               // if player has authority

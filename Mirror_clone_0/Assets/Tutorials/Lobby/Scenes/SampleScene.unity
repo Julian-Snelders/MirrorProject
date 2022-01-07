@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 201628743}
   - component: {fileID: 201628742}
   - component: {fileID: 201628741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -886,7 +886,7 @@ GameObject:
   - component: {fileID: 279260426}
   - component: {fileID: 279260425}
   - component: {fileID: 279260424}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1139,7 +1139,7 @@ GameObject:
   - component: {fileID: 564570634}
   - component: {fileID: 564570633}
   - component: {fileID: 564570632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1559,7 +1559,7 @@ GameObject:
   - component: {fileID: 779696460}
   - component: {fileID: 779696459}
   - component: {fileID: 779696458}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2713,7 +2713,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1230050689}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4090,7 +4090,11 @@ MonoBehaviour:
   playerPrefab: {fileID: 1576166998156186210, guid: 535cd7d2257b04543b0e25a597b808fe, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
-  spawnPrefabs: []
+  spawnPrefabs:
+  - {fileID: 4718742035490846760, guid: 936bd0b2086fdf149b7a6f5279ec8d93, type: 3}
+  - {fileID: 1771064471285766632, guid: b0c06c616f213d741b41db0fbb565992, type: 3}
+  - {fileID: 8635200237918389309, guid: bfe278329beb4954a9c2874021eef424, type: 3}
+  - {fileID: 8315047812150615375, guid: cad7bdd5ae37b074d9bf22bc0b31db0c, type: 3}
 --- !u!4 &1855708023
 Transform:
   m_ObjectHideFlags: 0
@@ -4117,7 +4121,7 @@ GameObject:
   - component: {fileID: 1941119745}
   - component: {fileID: 1941119744}
   - component: {fileID: 1941119743}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

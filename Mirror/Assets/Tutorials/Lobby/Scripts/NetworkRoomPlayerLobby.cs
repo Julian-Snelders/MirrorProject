@@ -8,7 +8,7 @@ public class NetworkRoomPlayerLobby : NetworkBehaviour // script per player
 {
     [Header("UI")]
     [SerializeField] private GameObject lobbyUI = null;                     // lobbyUI off by default except if its me
-    [SerializeField] private TMP_Text[] playerNameTexts = new TMP_Text[8];  // playernames
+    [SerializeField] public TMP_Text[] playerNameTexts = new TMP_Text[8];  // playernames
     [SerializeField] private TMP_Text[] playerReadyTexts = new TMP_Text[8]; // colored ready text
     [SerializeField] private Button startGameButton = null;                 // startgame button disabled. only host can start
 

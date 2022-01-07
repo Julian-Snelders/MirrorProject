@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerMovementController : NetworkBehaviour
 {
     [SerializeField] private float movementSpeed = 7.5f;            // walking Speed
+    [SerializeField] private float flySpeed = 35f;
     [SerializeField] private float speed;                           // default speed variable
     [SerializeField] private float sprintSpeed = 12.5f;             // sprinting speed
     [SerializeField] private CharacterController controller = null; 
@@ -17,6 +18,7 @@ public class PlayerMovementController : NetworkBehaviour
 
     private Controls controls;
 
+    bool godModeMove = false;
     private Controls Controls
     {
         get
@@ -55,7 +57,16 @@ public class PlayerMovementController : NetworkBehaviour
         {
                 Move(); // next method Move
                 Look();
-         
+
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                godModeMove = !godModeMove;
+                
+            }
+            if (godModeMove == true) { GodMode(); }
+            if (godModeMove == false) { transform.GetComponent<jump>().enabled = true; }
+
+
         }
     }
 
@@ -85,7 +96,21 @@ public class PlayerMovementController : NetworkBehaviour
         Vector3 movement = right.normalized * previousInput.x + forward.normalized * previousInput.y;
 
         controller.Move(movement * speed * Time.deltaTime);
-    }
+    }       // Movement method
+    [Client]
+    private void GodMode()
+    {
+        transform.GetComponent<jump>().enabled = false;
+        if (Input.GetKey(KeyCode.Space))
+        {
+            transform.position = transform.position + (Vector3.up * flySpeed * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            transform.position = transform.position + (-Vector3.up * flySpeed * Time.deltaTime);
+        }
+      
+    }   // GodMode Movement method
 
     [Client]
     public void Look()
@@ -96,7 +121,7 @@ public class PlayerMovementController : NetworkBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
       
-    }
+    } // Look Around method
    
 
 }
