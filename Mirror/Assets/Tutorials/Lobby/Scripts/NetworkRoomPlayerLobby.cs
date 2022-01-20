@@ -107,7 +107,7 @@ public class NetworkRoomPlayerLobby : NetworkBehaviour // script per player
     }
 
     [Command]
-    private void CmdSetDisplayName(string displayName) // when server gets the displayname
+    public void CmdSetDisplayName(string displayName) // when server gets the displayname
     {
         DisplayName = displayName;  // set it
     }

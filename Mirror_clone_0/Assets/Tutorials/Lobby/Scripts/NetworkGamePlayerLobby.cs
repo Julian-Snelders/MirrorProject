@@ -33,9 +33,9 @@ public class NetworkGamePlayerLobby : NetworkBehaviour
     }
 
     [Server]
-    public void SetDisplayName(string displayName)
+    public void SetDisplayName(string newdisplayName)
     {
-        this.displayName = displayName;    // set displayname
+        displayName = newdisplayName;    // set displayname
     }
 
 

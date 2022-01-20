@@ -19,6 +19,7 @@ public class PlayerMovementController : NetworkBehaviour
     private Controls controls;
 
     bool godModeMove = false;
+
     private Controls Controls
     {
         get
@@ -30,7 +31,6 @@ public class PlayerMovementController : NetworkBehaviour
  
     public override void OnStartAuthority() // called on object (Player) that has authority over this gameObject
     {
-        GetComponent<NetworkIdentity>().isLocalPlayer = true;
         Cursor.lockState = CursorLockMode.Locked;      // locks cursor
 
         enabled = true;

@@ -1,49 +1,41 @@
-using UnityEngine.UI;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
-public class PlayerNameInput : MonoBehaviour
-{
-    [Header("UI")]
-    [SerializeField] private TMP_InputField nameInputField = null;
-    [SerializeField] private Button continueButton = null;
 
-    public static string DisplayName { get; private set; }  //Get display name (nameInputField)
-
-    private const string PlayerPrefsNameKey = "PlayerName"; // string playername that gets saved 
-
-    private void Start() => SetUpInputField();   // start = void setupInputField
-
-    private void SetUpInputField()
+    public class PlayerNameInput : MonoBehaviour
     {
-        if (!PlayerPrefs.HasKey(PlayerPrefsNameKey)) { return; }  // if playerpref name is saved get it, else return.
+        [Header("UI")]
+        [SerializeField] private TMP_InputField nameInputField = null;
+        [SerializeField] private Button continueButton = null;
 
-        string defaultName = PlayerPrefs.GetString(PlayerPrefsNameKey); // playerpref emtpy, get playername and save
+        public static string DisplayName { get; private set; }
 
-        nameInputField.text = defaultName; //name inputfield == inputfield inhoud
+        private const string PlayerPrefsNameKey = "PlayerName";
 
-        SetPlayerName(defaultName); // start void SetPlayername met de name gesaved
-    }
+        private void Start() => SetUpInputField();
 
-
-    public TMP_Text text_Name;  
-    public void SetPlayerName(string name)
-    {
-        if(nameInputField.text == "")   // if nameinputfield == empty
+        private void SetUpInputField()
         {
-            continueButton.interactable = false; // continue button false
+            if (!PlayerPrefs.HasKey(PlayerPrefsNameKey)) { return; }
+
+            string defaultName = PlayerPrefs.GetString(PlayerPrefsNameKey);
+
+            nameInputField.text = defaultName;
+
+            SetPlayerName(defaultName);
         }
-        else
+
+        public void SetPlayerName(string name)
         {
-            continueButton.interactable = true; // true
+            continueButton.interactable = !string.IsNullOrEmpty(name);
+        }
+
+        public void SavePlayerName()
+        {
+            DisplayName = nameInputField.text;
+
+            PlayerPrefs.SetString(PlayerPrefsNameKey, DisplayName);
         }
     }
 
-    public void SavePlayerName()
-    {
-        DisplayName = nameInputField.text; //saved DisplayName = nameinputfield
-
-        PlayerPrefs.SetString(PlayerPrefsNameKey, DisplayName); // save it
-      
-    }
-}

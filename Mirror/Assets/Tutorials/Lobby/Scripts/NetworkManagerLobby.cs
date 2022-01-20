@@ -66,6 +66,7 @@ public class NetworkManagerLobby : NetworkManager
         } 
     }
 
+
     public override void OnServerAddPlayer(NetworkConnection conn)  // when onconnectclient connects
     {
         if (SceneManager.GetActiveScene().path == menuScene) // if scene == mainmenu
@@ -77,6 +78,7 @@ public class NetworkManagerLobby : NetworkManager
             roomPlayerinstance.IsLeader = isLeader;     // reference for roomplayerinstance so isleader stays the same
 
             NetworkServer.AddPlayerForConnection(conn, roomPlayerinstance.gameObject); // join server en keep your roomplayerinstance prefab yours.
+
         }
     }
 
@@ -97,6 +99,7 @@ public class NetworkManagerLobby : NetworkManager
     public override void OnStopServer() // base for stopping server en clearing the roomplayer list
     {
         RoomPlayers.Clear();
+        Cursor.lockState = CursorLockMode.None;
         // qeueu for new game, then roomplayer is allready cleared
     }
 
