@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 
 
-public class Billboard : MonoBehaviour
+public class Billboard : MonoBehaviour // script on TMP text
 {
     public Camera cameraToLookAt;
 
