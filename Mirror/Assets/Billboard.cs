@@ -13,16 +13,9 @@ public class Billboard : MonoBehaviour
         cameraToLookAt = Camera.main;
     }
 
-    private void LateUpdate()
+    private void LateUpdate() // late Update happens after the normal update. everything will be updated and afterwards the text component turns to our camera.
    {
-        transform.LookAt(cameraToLookAt.transform);
-        transform.rotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y + 180f, 0f);
-       // transform.Rotate(0f, cameraToLookAt.transform.position.y, 0f);
-
-            //  transform.LookAt(cameraToLookAt.transform.rotation * Vector3.forward, cameraToLookAt.transform.rotation * Vector3.up);
-
-     //   Vector3 v = cameraToLookAt.transform.position - transform.position;
-     //   v.x = v.z = 0.0f;
-     //   transform.LookAt(cameraToLookAt.transform.position - v);
+        transform.LookAt(cameraToLookAt.transform); // text component aims at camera
+        transform.rotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y + 180f, 0f); // freeze all movement except the Y movement and rotate it 180 degrees
    }
 }

@@ -6,11 +6,9 @@ using UnityEngine.EventSystems;
 
 public class placeItems : NetworkBehaviour
 {
-    [SerializeField] private GameObject[] GhostShapes;
-    [SerializeField] private GameObject[] placeableShapes;
+    [SerializeField] private GameObject[] GhostShapes;                          // array for Ghost objects
+    [SerializeField] private GameObject[] placeableShapes;                      // array for Placed objects
 
-    // [SerializeField] private List<GameObject> GhostShapes;                                // list of ghost objects
-    // [SerializeField] private List<GameObject> placeableShapes;                            // list of placed objects
     [SyncVar] int GhostIndex;                                                     // index number for specific ghost shape
     [SyncVar] int PlacedIndex;                                                    // index number for specific placed shape
 
@@ -24,15 +22,9 @@ public class placeItems : NetworkBehaviour
     bool pressedShape = false;                                          // if the UI button has been pressed
     RaycastHit hit;
 
-    public void Start()
-    {
-        //  GhostShapes = new List<GameObject>(Resources.LoadAll<GameObject>("GhostShapes"));           // found in resources file 'ghostshapes'
-        //  placeableShapes = new List<GameObject>(Resources.LoadAll<GameObject>("SpawnableShapes"));   // found in resources file 'spawnableshapes'
-
-    }
     public override void OnStartAuthority()
     {
-        enabled = true;
+        enabled = true;                                                 // enable on correct player
     }
 
   
@@ -43,34 +35,33 @@ public class placeItems : NetworkBehaviour
         PressedShape();
     }
 
- 
-    public void PressCube()
+    public void PressCube()                                             // method called on Cube button click
     {
         if (!hasAuthority) { return; }
         GhostIndex = 1;
         PressedShape();
     }
  
-    public void PressCylinder()
+    public void PressCylinder()                                        // method called on Cilinder button click
     {
         if (!hasAuthority) { return; }
         GhostIndex = 2;
         PressedShape();
     }
   
-    public void PressStair()
+    public void PressStair()                                           // method called on Stairs button click
     {
         if (!hasAuthority) { return; }
         GhostIndex = 3;
         PressedShape();
     }
 
-    void PressedShape()                                          // pressed a button method
+    void PressedShape()                                                // pressed a button method
     {
         pressedShape = true;
 
         ItemListOn = false;
-        ItemListUI.SetActive(false);                                    // UI object false
+        ItemListUI.SetActive(false);                                   // UI object false
 
         during = true;
 
@@ -124,14 +115,14 @@ public class placeItems : NetworkBehaviour
     [Command]
     void CmdSpawn(int index, Vector3 position, Quaternion rotation)
     {
-           GameObject PlaceDaShape = Instantiate(placeableShapes[index], position, rotation);  // instantiate placed object on ghost object position
+           GameObject PlaceDaShape = Instantiate(placeableShapes[index], position, rotation);  // instantiate placed object on 0, 0, 0
            NetworkServer.Spawn(PlaceDaShape, connectionToClient);
 
            CmdChangePosition(PlaceDaShape);
     }
 
     [Command]
-    void CmdChangePosition(GameObject Shape)
+    void CmdChangePosition(GameObject Shape)                                                   // get instantiated item and place at ghost position
     {
         if (connectionToClient != null)
         {
