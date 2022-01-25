@@ -15,11 +15,11 @@ C:/Users/jsnel/OneDrive/Bureaublad/MAD emergent art center/MirrorProject/Mirror
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57927
+65093
 Successfully changed project path to: C:/Users/jsnel/OneDrive/Bureaublad/MAD emergent art center/MirrorProject/Mirror
 C:/Users/jsnel/OneDrive/Bureaublad/MAD emergent art center/MirrorProject/Mirror
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 48.27 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 38.47 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -35,174 +35,743 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56572
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002389 seconds.
+Registered in 0.002122 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 47.56 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 38.94 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.050 seconds
+- Completed reload, in  0.983 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002557 seconds.
+Registered in 0.002633 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 42.99 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 40.48 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.000 seconds
+- Completed reload, in  0.875 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2166 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.5 MB.
-System memory in use after: 63.5 MB.
+Unloading 2292 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.2 MB.
+System memory in use after: 103.3 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2608.
-Total: 2.885000 ms (FindLiveObjects: 0.188300 ms CreateObjectMapping: 0.081700 ms MarkObjects: 2.496300 ms  DeleteObjects: 0.118000 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Tutorials/Lobby/Scripts/PlayerNameInput.cs
-  artifactKey: Guid(bb0d99d7fcb067a4aa4cdae5ca76673f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tutorials/Lobby/Scripts/PlayerNameInput.cs using Guid(bb0d99d7fcb067a4aa4cdae5ca76673f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb4e71a9fa0a1c3ff64fdb5c32270444') in 0.029022 seconds
-  Import took 0.032353 seconds .
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2729.
+Total: 3.306000 ms (FindLiveObjects: 0.371300 ms CreateObjectMapping: 0.189600 ms MarkObjects: 2.435700 ms  DeleteObjects: 0.308000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.443002 seconds.
-  path: Assets/Tutorials/Lobby/Scripts/PlayerNameInput.cs
-  artifactKey: Guid(bb0d99d7fcb067a4aa4cdae5ca76673f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tutorials/Lobby/Scripts/PlayerNameInput.cs using Guid(bb0d99d7fcb067a4aa4cdae5ca76673f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12ddf82608ec710bbfc6622afe066f0d') in 0.004491 seconds
-  Import took 0.008513 seconds .
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 W Icon.png
+  artifactKey: Guid(f1737b486a23f634bb246de79b8d4f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 W Icon.png using Guid(f1737b486a23f634bb246de79b8d4f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2657e354c2dfad5e1aba7c32d800366f') in 0.132632 seconds
+  Import took 0.136514 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.022642 seconds.
-  path: Assets/Tutorials/Lobby/Scripts/PlayerNameInput.cs
-  artifactKey: Guid(bb0d99d7fcb067a4aa4cdae5ca76673f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tutorials/Lobby/Scripts/PlayerNameInput.cs using Guid(bb0d99d7fcb067a4aa4cdae5ca76673f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12ddf82608ec710bbfc6622afe066f0d') in 0.004182 seconds
-  Import took 0.007303 seconds .
+  Time since last request: 0.000269 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 NE Icon.png
+  artifactKey: Guid(279a7f16bcc31014ea2d1e135f042805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 NE Icon.png using Guid(279a7f16bcc31014ea2d1e135f042805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781f4958dfb5fcd4f433d971b8be1740') in 0.012129 seconds
+  Import took 0.014981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Mirror/Examples/Tanks/Models/(Public Domain) Recon_Tank/BaseColor.png
+  artifactKey: Guid(ce00d67f9368944fa8ef4de6ccc77bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mirror/Examples/Tanks/Models/(Public Domain) Recon_Tank/BaseColor.png using Guid(ce00d67f9368944fa8ef4de6ccc77bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97ad79e3fe2cad79a1c72706d5f1c91') in 0.017263 seconds
+  Import took 0.020119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 S Icon.png
+  artifactKey: Guid(d1c17021ca3abd240940b57bdb8a735b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 S Icon.png using Guid(d1c17021ca3abd240940b57bdb8a735b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69280e825ee48f3b6c1828a03389ed63') in 0.011381 seconds
+  Import took 0.014322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 SW Icon.png
+  artifactKey: Guid(5a459e69f1835a3478400adb5f1138f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 SW Icon.png using Guid(5a459e69f1835a3478400adb5f1138f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284beb7c208e2d330b688c4fde81ec61') in 0.015972 seconds
+  Import took 0.019951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Mirror/Examples/Pong/Sprites/DottedLine.png
+  artifactKey: Guid(1b5c0b514d8b2d24091d5aec516fe860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mirror/Examples/Pong/Sprites/DottedLine.png using Guid(1b5c0b514d8b2d24091d5aec516fe860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '310686123a7ffcdc0d2ea6aab2b6c78d') in 0.013201 seconds
+  Import took 0.016231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Mirror/Examples/AdditiveLevels/Textures/Down_Tex.jpeg
+  artifactKey: Guid(9ffeeee1accdc4b4faf2b3e27b226340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mirror/Examples/AdditiveLevels/Textures/Down_Tex.jpeg using Guid(9ffeeee1accdc4b4faf2b3e27b226340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f93700b0c7794288248257a2f2e6f12') in 0.018449 seconds
+  Import took 0.021705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Mirror/Examples/Tanks/Models/(Public Domain) Recon_Tank/Emissive.png
+  artifactKey: Guid(9b3e91ab0048a4aa3a17706a349c6bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mirror/Examples/Tanks/Models/(Public Domain) Recon_Tank/Emissive.png using Guid(9b3e91ab0048a4aa3a17706a349c6bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f085191d375421b01b4b83b4011bb4b') in 0.013683 seconds
+  Import took 0.017218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 NE Icon.png
+  artifactKey: Guid(dbd95e0b0a894e24c80c1feabe91c32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 NE Icon.png using Guid(dbd95e0b0a894e24c80c1feabe91c32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54cf693ddf8c73e88d311c927a5e42d1') in 0.014650 seconds
+  Import took 0.018066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 S Icon.png
+  artifactKey: Guid(4e424f4b39c7f494faefd764418e86a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 S Icon.png using Guid(4e424f4b39c7f494faefd764418e86a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47bc128bc2495b80d631ded22d727dbf') in 0.011243 seconds
+  Import took 0.014430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Mirror/Examples/Tanks/Textures/(Public Domain) Dirt Hand Painted Texture/dirt.png
+  artifactKey: Guid(bcc8fc05f1f924531a65f39394c0b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mirror/Examples/Tanks/Textures/(Public Domain) Dirt Hand Painted Texture/dirt.png using Guid(bcc8fc05f1f924531a65f39394c0b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10822971131c1cb6254b70bfafb9a69e') in 0.013723 seconds
+  Import took 0.016557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 N Icon.png
+  artifactKey: Guid(0135e3d1b81285f48997c72fd061f8d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 N Icon.png using Guid(0135e3d1b81285f48997c72fd061f8d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b21e68e6dc6528ae26e1c5266c67777') in 0.012937 seconds
+  Import took 0.016141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 NW Icon.png
+  artifactKey: Guid(0908671c4d9d28e4890451f605e68243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 NW Icon.png using Guid(0908671c4d9d28e4890451f605e68243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aff1419572f531617f360a66467bc57d') in 0.010065 seconds
+  Import took 0.013344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Mirror/Examples/AdditiveLevels/Textures/Back_Tex.jpeg
+  artifactKey: Guid(1566af6e663684dbd85aa5fb32fd9148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mirror/Examples/AdditiveLevels/Textures/Back_Tex.jpeg using Guid(1566af6e663684dbd85aa5fb32fd9148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e99eecccd19c4128ca9195bfbe58ef3') in 0.016865 seconds
+  Import took 0.019912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 S Icon.png
+  artifactKey: Guid(3fcadb60666ffdc4ca5aaae842a00cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 S Icon.png using Guid(3fcadb60666ffdc4ca5aaae842a00cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36477f3c360529ab3bc6b31035c4c5d') in 0.010451 seconds
+  Import took 0.013766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 SW Icon.png
+  artifactKey: Guid(6d58acdac385dc546b74022fbe2912d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 SW Icon.png using Guid(6d58acdac385dc546b74022fbe2912d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12640e2761a56559214521aabe535268') in 0.011733 seconds
+  Import took 0.014910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 SW Icon.png
+  artifactKey: Guid(b986971d1c7b79f4da924287d73529da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 SW Icon.png using Guid(b986971d1c7b79f4da924287d73529da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e303e8d037227cdfa0627c99458ceef8') in 0.012774 seconds
+  Import took 0.016122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Mirror/Examples/Pong/Sprites/Ball.png
+  artifactKey: Guid(4b66f21097323d44ab40669b2fb9c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mirror/Examples/Pong/Sprites/Ball.png using Guid(4b66f21097323d44ab40669b2fb9c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e4be0f8f65e70340639aa290963e9c5') in 0.012974 seconds
+  Import took 0.016344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 N Icon.png
+  artifactKey: Guid(e4c4e46ba50bb604f86f4217e0f4f7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 N Icon.png using Guid(e4c4e46ba50bb604f86f4217e0f4f7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a00a2ed9e0eeae715144a154d488dd1') in 0.013826 seconds
+  Import took 0.017450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '461de82cd83b6ace2f2bb42f6d30c826') in 0.009200 seconds
+  Import took 0.012119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 E Icon.png
+  artifactKey: Guid(e0cd4bae4d3ba9448ae4405c2c6a2ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 E Icon.png using Guid(e0cd4bae4d3ba9448ae4405c2c6a2ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71dacf72855da225249c965116ef5f37') in 0.010501 seconds
+  Import took 0.013658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 SE Icon.png
+  artifactKey: Guid(d5882ef03c430c342ab211e6c2ceb253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 SE Icon.png using Guid(d5882ef03c430c342ab211e6c2ceb253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '850296c3b4941384f5783b4a216301e8') in 0.013587 seconds
+  Import took 0.017097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 E Icon.png
+  artifactKey: Guid(2750da8e4b41f294090c5d2a83c0992f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 E Icon.png using Guid(2750da8e4b41f294090c5d2a83c0992f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54a2477efb34a20db8bfecbcecd6619d') in 0.010604 seconds
+  Import took 0.013576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 N Icon.png
+  artifactKey: Guid(301fe569da9047c4988d46c1707ea4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 N Icon.png using Guid(301fe569da9047c4988d46c1707ea4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59607ace3f8bac2092898f719eb85d2a') in 0.012483 seconds
+  Import took 0.015764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000464 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 N Icon.png
+  artifactKey: Guid(d10be4c155f6e254a998cc68201d1afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 N Icon.png using Guid(d10be4c155f6e254a998cc68201d1afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d75ec87fda82e10835eba2843f5ad55') in 0.010930 seconds
+  Import took 0.014089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 NE Icon.png
+  artifactKey: Guid(45de8653136b13c4a9ecd7a7de0558f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 NE Icon.png using Guid(45de8653136b13c4a9ecd7a7de0558f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa20263c2300bc28101bc94dc01a48a1') in 0.010420 seconds
+  Import took 0.013559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 E Icon.png
+  artifactKey: Guid(c3c804cbbfd6a8a4c8e930a1817c8780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 E Icon.png using Guid(c3c804cbbfd6a8a4c8e930a1817c8780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36689c28a9d616237335be83565df6d') in 0.013387 seconds
+  Import took 0.016869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000537 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 NW Icon.png
+  artifactKey: Guid(374f5d9702e6f8e40b920390c6e57387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 NW Icon.png using Guid(374f5d9702e6f8e40b920390c6e57387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208533b73521b9d26d3de176a84e2440') in 0.011628 seconds
+  Import took 0.015018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 NW Icon.png
+  artifactKey: Guid(afa13aa3dd1037b4684bb0e9a8e18d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 NW Icon.png using Guid(afa13aa3dd1037b4684bb0e9a8e18d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a041f9ddc0fbc4f00c439b2beefa1efa') in 0.013242 seconds
+  Import took 0.017988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 E Icon.png
+  artifactKey: Guid(b0b13fccedbbc0243acde6180912a042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 E Icon.png using Guid(b0b13fccedbbc0243acde6180912a042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ef862bf85710ec66c9a71b9e874dc9e') in 0.013146 seconds
+  Import took 0.017053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 SE Icon.png
+  artifactKey: Guid(b32c7f736da6d414885853c4b34e31d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 SE Icon.png using Guid(b32c7f736da6d414885853c4b34e31d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b612354884c8635d486b9b57ac2ff17f') in 0.010858 seconds
+  Import took 0.013906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 W Icon.png
+  artifactKey: Guid(23add5d3efd8ecd49af5c748108f341b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 W Icon.png using Guid(23add5d3efd8ecd49af5c748108f341b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63756689e377c4f59806fdfb3c8a2fda') in 0.012997 seconds
+  Import took 0.016749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 SE Icon.png
+  artifactKey: Guid(b654f5b026561954c82e36116cf969a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 SE Icon.png using Guid(b654f5b026561954c82e36116cf969a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d402da949944f520edf9ef97659de7e') in 0.011618 seconds
+  Import took 0.014828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 SE Icon.png
+  artifactKey: Guid(b32c7f736da6d414885853c4b34e31d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 SE Icon.png using Guid(b32c7f736da6d414885853c4b34e31d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b612354884c8635d486b9b57ac2ff17f') in 0.006453 seconds
+  Import took 0.010480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 W Icon.png
+  artifactKey: Guid(91f687269d00d8548a0c2a0e7e4736e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 W Icon.png using Guid(91f687269d00d8548a0c2a0e7e4736e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb35e128203143b01079d2e8a88c6ec') in 0.013596 seconds
+  Import took 0.017210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 NE Icon.png
+  artifactKey: Guid(a718555c3c9d59846ac98a0c328a6de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 NE Icon.png using Guid(a718555c3c9d59846ac98a0c328a6de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0128d3e046567333991a80d9e44f1fd') in 0.010715 seconds
+  Import took 0.013857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 SE Icon.png
+  artifactKey: Guid(b654f5b026561954c82e36116cf969a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 SE Icon.png using Guid(b654f5b026561954c82e36116cf969a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d402da949944f520edf9ef97659de7e') in 0.006183 seconds
+  Import took 0.009075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023877 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 NE Icon.png
+  artifactKey: Guid(a718555c3c9d59846ac98a0c328a6de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 NE Icon.png using Guid(a718555c3c9d59846ac98a0c328a6de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0128d3e046567333991a80d9e44f1fd') in 0.007918 seconds
+  Import took 0.011811 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2739.
+Total: 2.433700 ms (FindLiveObjects: 0.250800 ms CreateObjectMapping: 0.109500 ms MarkObjects: 1.998200 ms  DeleteObjects: 0.074500 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002792 seconds.
+Registered in 0.003119 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.812 seconds
+- Completed reload, in  0.943 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2126 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.1 MB.
-System memory in use after: 95.2 MB.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.9 MB.
+System memory in use after: 103.1 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2611.
-Total: 1.876100 ms (FindLiveObjects: 0.202900 ms CreateObjectMapping: 0.091900 ms MarkObjects: 1.492200 ms  DeleteObjects: 0.088400 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2742.
+Total: 2.023600 ms (FindLiveObjects: 0.212100 ms CreateObjectMapping: 0.103300 ms MarkObjects: 1.626900 ms  DeleteObjects: 0.080400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.064893 seconds.
+  Time since last request: 311.817588 seconds.
   path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
   artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dd22f37598de3f3169babc34c29c0d4') in 0.160187 seconds
-  Import took 0.165776 seconds .
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cda3cbc72420104d1a4cc6c31a1048d') in 0.147807 seconds
+  Import took 0.152298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.100353 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98dfa4712b87f17a09d627f25b80c67e') in 0.039269 seconds
+  Import took 0.043828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.018175 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '278a2b07a60866efde63b9c098b0c2fb') in 0.037478 seconds
+  Import took 0.042024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.856046 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84e20db749116c90f00fa98e290473c') in 0.034908 seconds
+  Import took 0.039265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.064275 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363696d263ec3ff2a65aabac169c12ef') in 0.035212 seconds
+  Import took 0.039120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.612897 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '445bf14bef829a82fd87101374448c6f') in 0.036604 seconds
+  Import took 0.040873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.084581 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a61f232f5db530f4498301e899517aa5') in 0.034062 seconds
+  Import took 0.037718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.013853 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0926ce5b3d7e7cc94b416f78a43d8c2') in 0.034404 seconds
+  Import took 0.038502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.994790 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aae8a1e033860ef2d92109354d1209c') in 0.034276 seconds
+  Import took 0.038239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.014855 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b8adb33f560d58dc789f16d30ca169') in 0.035576 seconds
+  Import took 0.040157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.014600 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea765027a663179d16feadef6b3529f') in 0.037049 seconds
+  Import took 0.041583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.244012 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb90b140b7b9daac2fdd70a4007691cf') in 0.034786 seconds
+  Import took 0.038755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.793609 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601da5765138459ad5f25542821265f1') in 0.036976 seconds
+  Import took 0.040747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.600023 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '382c737585224e7cbf1fea98319cc307') in 0.032266 seconds
+  Import took 0.036041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.174860 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91306d80a5fd7b2279321a037407c346') in 0.036087 seconds
+  Import took 0.039895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.033318 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549074587b74cb27b9732e19a2022d3b') in 0.035890 seconds
+  Import took 0.039708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.369830 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7880d7c6030d81a0e207b88bed431c77') in 0.035171 seconds
+  Import took 0.039870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.833271 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb934f578a45ec1234864f339a9c5df7') in 0.034980 seconds
+  Import took 0.039070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.712589 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4c4e7b19d2d1cd666b93cf90d8f00e') in 0.035640 seconds
+  Import took 0.039936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.373942 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c1267f533d9d6420e876c6eb3f53162') in 0.035633 seconds
+  Import took 0.039935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.981777 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e164e9085375ab217f095feeeab961') in 0.033978 seconds
+  Import took 0.038021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.177814 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c31e7a30adaa7703df0fd2f4fdb7393') in 0.035610 seconds
+  Import took 0.039826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.585830 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a72defd15f393c5163f5e862be8d62') in 0.034873 seconds
+  Import took 0.039295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.716051 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd4a631ff0295134690402056411033') in 0.031969 seconds
+  Import took 0.035691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.575034 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd505d2f635f41b93ae68ede93b98a497') in 0.035833 seconds
+  Import took 0.040309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.104956 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e6ecff07e66bdb83164a1d58492d3d') in 0.033939 seconds
+  Import took 0.037876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.813779 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '393cf543b9ae74810878c068cd6a8811') in 0.034250 seconds
+  Import took 0.038609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.230317 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceabde58f0d86d9eb9f716a1f030d5c9') in 0.035784 seconds
+  Import took 0.040159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.582043 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc929fb208fd305cccb36fe6f622115') in 0.033813 seconds
+  Import took 0.038130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.586047 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2fac4e062e54a625e22ac4012b961aa') in 0.032553 seconds
+  Import took 0.036672 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002351 seconds.
+Registered in 0.004033 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.797 seconds
+- Completed reload, in  1.150 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2126 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.3 MB.
-System memory in use after: 98.4 MB.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.4 MB.
+System memory in use after: 103.5 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2627.
-Total: 2.088900 ms (FindLiveObjects: 0.190700 ms CreateObjectMapping: 0.082200 ms MarkObjects: 1.714000 ms  DeleteObjects: 0.101200 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2755.
+Total: 3.043200 ms (FindLiveObjects: 0.366200 ms CreateObjectMapping: 0.230900 ms MarkObjects: 2.305200 ms  DeleteObjects: 0.139100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.046591 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81ee87f707f649cfd96207aff5dc7464') in 0.161125 seconds
+  Import took 0.166675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.452253 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb4ef9141a0651d83f64ebd2361dfacc') in 0.037907 seconds
+  Import took 0.042911 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002519 seconds.
+Registered in 0.003292 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.825 seconds
+- Completed reload, in  1.055 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2126 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.4 MB.
-System memory in use after: 98.4 MB.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.4 MB.
+System memory in use after: 103.6 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2630.
-Total: 1.808700 ms (FindLiveObjects: 0.187500 ms CreateObjectMapping: 0.075000 ms MarkObjects: 1.443600 ms  DeleteObjects: 0.102000 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2759.
+Total: 3.471400 ms (FindLiveObjects: 0.308300 ms CreateObjectMapping: 0.153700 ms MarkObjects: 2.899600 ms  DeleteObjects: 0.108300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.445009 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324b585629f8146239f652f6fbf8af74') in 0.164354 seconds
+  Import took 0.171562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.872508 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f19c32d3fcaa1ab8551770038a9e549') in 0.038791 seconds
+  Import took 0.044235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.671553 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1393b42e7a6f165bcd48e89a6bf3c4ce') in 0.033408 seconds
+  Import took 0.037068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.372743 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab
+  artifactKey: Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/Player.prefab using Guid(535cd7d2257b04543b0e25a597b808fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ded5d63f771054e1490a67cdd1f43d7') in 0.034003 seconds
+  Import took 0.038740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4526.246884 seconds.
+  path: Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/NetworkRoomPlayer.prefab
+  artifactKey: Guid(255bd50c0b57afc4489a3dad8dd9d0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/Lobby/Resources/SpawnablePrefabs/NetworkRoomPlayer.prefab using Guid(255bd50c0b57afc4489a3dad8dd9d0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f5371fa25aed0eb2241c2ee309de66') in 0.088943 seconds
+  Import took 0.150694 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002425 seconds.
+Registered in 0.003503 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.785 seconds
+- Completed reload, in  1.215 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2126 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.5 MB.
-System memory in use after: 98.5 MB.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.6 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2633.
-Total: 1.769200 ms (FindLiveObjects: 0.189600 ms CreateObjectMapping: 0.074500 ms MarkObjects: 1.413700 ms  DeleteObjects: 0.090800 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2763.
+Total: 3.475300 ms (FindLiveObjects: 0.341900 ms CreateObjectMapping: 0.151100 ms MarkObjects: 2.661200 ms  DeleteObjects: 0.318100 ms)
 
 ========================================================================
 Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003004 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 4.43 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.015 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2126 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.5 MB.
-System memory in use after: 98.5 MB.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.2 MB.
+System memory in use after: 58.3 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2636.
-Total: 2.908600 ms (FindLiveObjects: 0.249600 ms CreateObjectMapping: 0.166800 ms MarkObjects: 2.328900 ms  DeleteObjects: 0.161500 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2763.
+Total: 2.622800 ms (FindLiveObjects: 0.466000 ms CreateObjectMapping: 0.187300 ms MarkObjects: 1.881800 ms  DeleteObjects: 0.087000 ms)
 

@@ -7,15 +7,29 @@ using TMPro;
 public class MyNetworkPlayer : NetworkBehaviour
 {
     public TMP_Text gamertag; // this is the UI that floats above the head of players.
+
     public Camera cam;
+
+    [SyncVar]
+    public string playername = null;
+
+    public override void OnStartAuthority()
+    {
+
+        if(cam.isActiveAndEnabled)
+        CmdSetDisplayName(PlayerNameInput.DisplayName);
+    }
+
+    [Command]
+    public void CmdSetDisplayName(string displayName)
+    {
+        playername = displayName;
+    }
 
     public void Update()
     {
-      //  if (!hasAuthority) { return; }
+        gamertag.text = playername;
 
-      //  if(cam.isActiveAndEnabled)
-       // gamertag.text = GetComponent<NetworkManagerLobby>().gamertag;
-        //gamertag.text = name;
     }
 
 

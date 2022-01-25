@@ -40,7 +40,6 @@ public class placeItems : NetworkBehaviour
     {
         if (!hasAuthority) { return; }
         GhostIndex = 0;
-        Debug.Log(GhostIndex);
         PressedShape();
     }
 
@@ -49,7 +48,6 @@ public class placeItems : NetworkBehaviour
     {
         if (!hasAuthority) { return; }
         GhostIndex = 1;
-        Debug.Log(GhostIndex);
         PressedShape();
     }
  
@@ -57,7 +55,6 @@ public class placeItems : NetworkBehaviour
     {
         if (!hasAuthority) { return; }
         GhostIndex = 2;
-        Debug.Log(GhostIndex);
         PressedShape();
     }
   
@@ -65,7 +62,6 @@ public class placeItems : NetworkBehaviour
     {
         if (!hasAuthority) { return; }
         GhostIndex = 3;
-        Debug.Log(GhostIndex);
         PressedShape();
     }
 
@@ -128,17 +124,10 @@ public class placeItems : NetworkBehaviour
     [Command]
     void CmdSpawn(int index, Vector3 position, Quaternion rotation)
     {
-
-        Debug.Log($"before { PlacedIndex}");
            GameObject PlaceDaShape = Instantiate(placeableShapes[index], position, rotation);  // instantiate placed object on ghost object position
            NetworkServer.Spawn(PlaceDaShape, connectionToClient);
-        Debug.Log($"After { PlacedIndex}");
 
-     //   GameObject PlaceDaShape = Instantiate(placeableShapes[GhostIndex]);    // spawn from networkmanager (clients can see)
-    //    NetworkServer.Spawn(PlaceDaShape);
-        Debug.Log($" Connection of player is = {connectionToClient}");
-        Debug.Log($" spawned object location = {PlaceDaShape.transform.position}");
-        CmdChangePosition(PlaceDaShape);
+           CmdChangePosition(PlaceDaShape);
     }
 
     [Command]
@@ -146,9 +135,7 @@ public class placeItems : NetworkBehaviour
     {
         if (connectionToClient != null)
         {
-            Debug.Log("feest");
             Shape.transform.position = ghost.transform.position;
-            Debug.Log($" spawned object location after position change = {Shape.transform.position}");
         }
     }
 
